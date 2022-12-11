@@ -1,11 +1,17 @@
 import React from "react";
 
-import { OrderCard as PageCard } from "./styles";
+import { Container, OrderCard as PageCard, Trash } from "./styles";
+
+
 
 // eslint-disable-next-line react/prop-types
-function OrderCard({ children }) {
+function OrderCard({ props }) {
 
-    return <PageCard>{children}</PageCard>
+    return <PageCard>
+        <Container>
+        </Container>
+        <Trash />
+    </PageCard>
 }
 
 export default OrderCard

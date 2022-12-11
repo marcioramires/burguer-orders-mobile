@@ -2,21 +2,24 @@ import React from "react";
 
 import Button from "../../components/Button";
 import Image from "../../components/Img";
-import Label from "../../components/Label";
+import OrderCard from "../../components/OrderCard";
 import Title from "../../components/Title";
 
-import { Container } from "./styles";
+import { Wrapped } from "./styles";
+
+import Burger2 from "../../assets/burger2.svg";
 
 const App = () => {
 
     return (
-        <Container>
-            <Image />
-            <Title></Title>
-            <Label>Pedido</Label>
-            <Label>Nome do Cliente</Label>
-            <Button>Novo Pedido</Button>
-        </Container>
+        <Wrapped>
+            <Image src={Burger2} />
+            <Title>Pedidos</Title>
+            <OrderCard>
+
+            </OrderCard>
+            <Button isBack>Voltar</Button>
+        </Wrapped>
     )
 }
 
